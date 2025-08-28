@@ -16,7 +16,7 @@ This CPU is a simple single-cycle processor capable of executing a custom instru
 
 ## 🧩 Features
 
-- ✅ 8-bit / 16-bit instruction support *(depending on your design)*
+- ✅ 32-bit instruction support 
 - ✅ Arithmetic & logic operations (ADD, SUB, AND, OR, etc.)
 - ✅ Register File
 - ✅ Control Unit (FSM-based)
@@ -36,5 +36,4 @@ This CPU is a simple single-cycle processor capable of executing a custom instru
 
 ---
 
-## 📂 Project Structure
-
+"Some parts are not working after the final change, so please be careful when using it."
