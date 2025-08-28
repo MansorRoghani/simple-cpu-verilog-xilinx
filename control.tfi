@@ -1,0 +1,19 @@
+
+
+
+// Instantiate the module
+control instance_name (
+    .clk(clk), 
+    .instruction(instruction), 
+    .regdst(regdst), 
+    .jump(jump), 
+    .branch(branch), 
+    .memread(memread), 
+    .memtoreg(memtoreg), 
+    .memwrite(memwrite), 
+    .alusrc(alusrc), 
+    .regwrite(regwrite), 
+    .aluop(aluop)
+    );
+
+

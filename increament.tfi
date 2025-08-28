@@ -1,0 +1,10 @@
+
+
+
+// Instantiate the module
+increament instance_name (
+    .increament_input(increament_input), 
+    .increament_out(increament_out)
+    );
+
+

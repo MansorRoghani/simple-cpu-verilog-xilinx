@@ -1,0 +1,43 @@
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Users/kolob/Desktop/cpu/test_isim_beh.exe" -prj "C:/Users/kolob/Desktop/cpu/test_beh.prj" "work.test" "work.glbl" 
+ISim P.20131013 (signature 0x8ef4fb42)
+Number of CPUs detected in this system: 2
+Turning on mult-threading, number of parallel sub-compilation jobs: 4 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/kolob/Desktop/cpu/registers.v" into library work
+Analyzing Verilog file "C:/Users/kolob/Desktop/cpu/pc.v" into library work
+Analyzing Verilog file "C:/Users/kolob/Desktop/cpu/mux_regdst.v" into library work
+Analyzing Verilog file "C:/Users/kolob/Desktop/cpu/mux32.v" into library work
+Analyzing Verilog file "C:/Users/kolob/Desktop/cpu/mux16.v" into library work
+Analyzing Verilog file "C:/Users/kolob/Desktop/cpu/instruction_memory.v" into library work
+Analyzing Verilog file "C:/Users/kolob/Desktop/cpu/increament.v" into library work
+Analyzing Verilog file "C:/Users/kolob/Desktop/cpu/datamemory.v" into library work
+Analyzing Verilog file "C:/Users/kolob/Desktop/cpu/control.v" into library work
+Analyzing Verilog file "C:/Users/kolob/Desktop/cpu/alu.v" into library work
+Analyzing Verilog file "C:/Users/kolob/Desktop/cpu/adder.v" into library work
+Analyzing Verilog file "C:/Users/kolob/Desktop/cpu/calab.v" into library work
+Analyzing Verilog file "C:/Users/kolob/Desktop/cpu/test.v" into library work
+Analyzing Verilog file "K:/memary/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 106276 KB
+Fuse CPU Usage: 295 ms
+Compiling module pc
+Compiling module increament
+Compiling module instruction_memory
+Compiling module control
+Compiling module mux_regdst
+Compiling module registers
+Compiling module mux16
+Compiling module alu
+Compiling module datamemory
+Compiling module adder
+Compiling module mux32
+Compiling module calab
+Compiling module test
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 15 sub-compilation(s) to finish...
+Compiled 14 Verilog Units
+Built simulation executable C:/Users/kolob/Desktop/cpu/test_isim_beh.exe
+Fuse Memory Usage: 109844 KB
+Fuse CPU Usage: 374 ms

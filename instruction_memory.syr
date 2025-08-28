@@ -1,0 +1,693 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Reading design: instruction_memory.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "instruction_memory.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "instruction_memory"
+Output Format                      : NGC
+Target Device                      : xc6slx9-3-tqg144
+
+---- Source Options
+Top Module Name                    : instruction_memory
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "K:\memary\project\final\instruction_memory.v" into library work
+Parsing module <instruction_memory>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <instruction_memory>.
+WARNING:HDLCompiler:634 - "K:\memary\project\final\instruction_memory.v" Line 22: Net <memory[255][31]> does not have a driver.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <instruction_memory>.
+    Related source file is "K:\memary\project\final\instruction_memory.v".
+WARNING:Xst:647 - Input <instruction_address<31:8>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:653 - Signal <memory<255>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<254>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<253>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<252>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<251>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<250>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<249>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<248>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<247>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<246>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<245>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<244>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<243>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<242>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<241>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<240>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<239>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<238>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<237>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<236>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<235>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<234>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<233>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<232>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<231>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<230>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<229>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<228>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<227>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<226>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<225>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<224>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<223>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<222>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<221>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<220>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<219>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<218>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<217>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<216>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<215>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<214>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<213>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<212>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<211>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<210>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<209>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<208>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<207>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<206>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<205>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<204>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<203>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<202>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<201>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<200>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<199>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<198>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<197>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<196>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<195>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<194>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<193>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<192>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<191>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<190>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<189>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<188>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<187>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<186>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<185>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<184>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<183>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<182>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<181>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<180>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<179>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<178>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<177>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<176>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<175>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<174>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<173>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<172>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<171>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<170>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<169>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<168>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<167>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<166>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<165>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<164>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<163>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<162>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<161>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<160>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<159>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<158>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<157>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<156>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<155>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<154>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<153>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<152>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<151>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<150>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<149>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<148>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<147>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<146>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<145>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<144>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<143>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<142>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<141>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<140>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<139>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<138>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<137>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<136>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<135>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<134>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<133>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<132>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<131>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<130>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<129>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<128>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<127>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<126>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<125>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<124>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<123>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<122>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<121>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<120>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<119>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<118>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<117>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<116>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<115>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<114>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<113>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<112>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<111>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<110>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<109>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<108>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<107>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<106>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<105>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<104>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<103>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<102>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<101>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<100>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<99>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<98>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<97>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<96>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<95>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<94>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<93>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<92>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<91>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<90>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<89>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<88>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<87>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<86>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<85>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<84>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<83>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<82>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<81>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<80>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<79>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<78>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<77>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<76>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<75>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<74>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<73>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<72>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<71>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<70>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<69>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<68>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<67>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<66>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<65>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<64>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<63>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<62>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<61>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<60>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<59>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<58>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<57>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<56>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<55>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<54>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<53>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<52>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<51>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<50>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<49>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<48>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<47>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<46>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<45>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<44>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<43>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<42>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<41>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<40>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<39>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<38>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<37>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<36>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<35>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<34>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<33>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<32>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<31>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<30>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<29>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<28>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<27>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<26>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<25>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<24>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<23>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<22>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<21>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<20>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<19>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<18>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<17>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<16>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<15>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<14>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<13>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<12>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<11>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<10>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<9>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<8>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<7>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<6>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<5>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<4>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <memory<3>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Found 32-bit register for signal <instruction_out>.
+    Found 256x32-bit Read Only RAM for signal <instruction_address[7]_memory[255][31]_wide_mux_1_OUT>
+    WARNING:Xst:2404 -  FFs/Latches <memory<2><31><0:0>> (without init value) have a constant value of 0 in block <instruction_memory>.
+    WARNING:Xst:2404 -  FFs/Latches <memory<2><30><31:31>> (without init value) have a constant value of 0 in block <instruction_memory>.
+    WARNING:Xst:2404 -  FFs/Latches <memory<2><29><0:0>> (without init value) have a constant value of 1 in block <instruction_memory>.
+    WARNING:Xst:2404 -  FFs/Latches <memory<2><28><29:29>> (without init value) have a constant value of 1 in block <instruction_memory>.
+    WARNING:Xst:2404 -  FFs/Latches <memory<2><27><28:28>> (without init value) have a constant value of 1 in block <instruction_memory>.
+    WARNING:Xst:2404 -  FFs/Latches <memory<2><26><27:27>> (without init value) have a constant value of 1 in block <instruction_memory>.
+    WARNING:Xst:2404 -  FFs/Latches <memory<2><25><30:30>> (without init value) have a constant value of 0 in block <instruction_memory>.
+    WARNING:Xst:2404 -  FFs/Latches <memory<2><24><25:25>> (without init value) have a constant value of 0 in block <instruction_memory>.
+    WARNING:Xst:2404 -  FFs/Latches <memory<2><23><24:24>> (without init value) have a constant value of 0 in block <instruction_memory>.
+    WARNING:Xst:2404 -  FFs/Latches <memory<2><22><23:23>> (without init value) have a constant value of 0 in block <instruction_memory>.
+    WARNING:Xst:2404 -  FFs/Latches <memory<2><21><22:22>> (without init value) have a constant value of 0 in block <instruction_memory>.
+    WARNING:Xst:2404 -  FFs/Latches <memory<2><20><21:21>> (without init value) have a constant value of 0 in block <instruction_memory>.
+    WARNING:Xst:2404 -  FFs/Latches <memory<2><19><20:20>> (without init value) have a constant value of 0 in block <instruction_memory>.
+    WARNING:Xst:2404 -  FFs/Latches <memory<2><18><19:19>> (without init value) have a constant value of 0 in block <instruction_memory>.
+    WARNING:Xst:2404 -  FFs/Latches <memory<2><17><26:26>> (without init value) have a constant value of 1 in block <instruction_memory>.
+    WARNING:Xst:2404 -  FFs/Latches <memory<2><16><17:17>> (without init value) have a constant value of 1 in block <instruction_memory>.
+    WARNING:Xst:2404 -  FFs/Latches <memory<2><15><18:18>> (without init value) have a constant value of 0 in block <instruction_memory>.
+    WARNING:Xst:2404 -  FFs/Latches <memory<2><14><15:15>> (without init value) have a constant value of 0 in block <instruction_memory>.
+    WARNING:Xst:2404 -  FFs/Latches <memory<2><13><14:14>> (without init value) have a constant value of 0 in block <instruction_memory>.
+    WARNING:Xst:2404 -  FFs/Latches <memory<2><12><13:13>> (without init value) have a constant value of 0 in block <instruction_memory>.
+    WARNING:Xst:2404 -  FFs/Latches <memory<2><11><12:12>> (without init value) have a constant value of 0 in block <instruction_memory>.
+    WARNING:Xst:2404 -  FFs/Latches <memory<2><10><11:11>> (without init value) have a constant value of 0 in block <instruction_memory>.
+    WARNING:Xst:2404 -  FFs/Latches <memory<2><9><10:10>> (without init value) have a constant value of 0 in block <instruction_memory>.
+    WARNING:Xst:2404 -  FFs/Latches <memory<2><8><9:9>> (without init value) have a constant value of 0 in block <instruction_memory>.
+    WARNING:Xst:2404 -  FFs/Latches <memory<2><7><8:8>> (without init value) have a constant value of 0 in block <instruction_memory>.
+    WARNING:Xst:2404 -  FFs/Latches <memory<2><6><7:7>> (without init value) have a constant value of 0 in block <instruction_memory>.
+    WARNING:Xst:2404 -  FFs/Latches <memory<2><5><16:16>> (without init value) have a constant value of 1 in block <instruction_memory>.
+    WARNING:Xst:2404 -  FFs/Latches <memory<2><4><6:6>> (without init value) have a constant value of 0 in block <instruction_memory>.
+    WARNING:Xst:2404 -  FFs/Latches <memory<2><3><4:4>> (without init value) have a constant value of 0 in block <instruction_memory>.
+    WARNING:Xst:2404 -  FFs/Latches <memory<2><2><3:3>> (without init value) have a constant value of 0 in block <instruction_memory>.
+    WARNING:Xst:2404 -  FFs/Latches <memory<2><1><2:2>> (without init value) have a constant value of 0 in block <instruction_memory>.
+    WARNING:Xst:2404 -  FFs/Latches <memory<2><0><1:1>> (without init value) have a constant value of 0 in block <instruction_memory>.
+    WARNING:Xst:2404 -  FFs/Latches <memory<1><31><0:0>> (without init value) have a constant value of 0 in block <instruction_memory>.
+    WARNING:Xst:2404 -  FFs/Latches <memory<1><30><31:31>> (without init value) have a constant value of 0 in block <instruction_memory>.
+    WARNING:Xst:2404 -  FFs/Latches <memory<1><29><5:5>> (without init value) have a constant value of 1 in block <instruction_memory>.
+    WARNING:Xst:2404 -  FFs/Latches <memory<1><28><29:29>> (without init value) have a constant value of 1 in block <instruction_memory>.
+    WARNING:Xst:2404 -  FFs/Latches <memory<1><27><28:28>> (without init value) have a constant value of 1 in block <instruction_memory>.
+    WARNING:Xst:2404 -  FFs/Latches <memory<1><26><27:27>> (without init value) have a constant value of 1 in block <instruction_memory>.
+    WARNING:Xst:2404 -  FFs/Latches <memory<1><25><30:30>> (without init value) have a constant value of 0 in block <instruction_memory>.
+    WARNING:Xst:2404 -  FFs/Latches <memory<1><24><25:25>> (without init value) have a constant value of 0 in block <instruction_memory>.
+    WARNING:Xst:2404 -  FFs/Latches <memory<1><23><24:24>> (without init value) have a constant value of 0 in block <instruction_memory>.
+    WARNING:Xst:2404 -  FFs/Latches <memory<1><22><23:23>> (without init value) have a constant value of 0 in block <instruction_memory>.
+    WARNING:Xst:2404 -  FFs/Latches <memory<1><21><22:22>> (without init value) have a constant value of 0 in block <instruction_memory>.
+    WARNING:Xst:2404 -  FFs/Latches <memory<1><20><21:21>> (without init value) have a constant value of 0 in block <instruction_memory>.
+    WARNING:Xst:2404 -  FFs/Latches <memory<1><19><20:20>> (without init value) have a constant value of 0 in block <instruction_memory>.
+    WARNING:Xst:2404 -  FFs/Latches <memory<1><18><19:19>> (without init value) have a constant value of 0 in block <instruction_memory>.
+    WARNING:Xst:2404 -  FFs/Latches <memory<1><17><26:26>> (without init value) have a constant value of 1 in block <instruction_memory>.
+    WARNING:Xst:2404 -  FFs/Latches <memory<1><16><18:18>> (without init value) have a constant value of 0 in block <instruction_memory>.
+    WARNING:Xst:2404 -  FFs/Latches <memory<1><15><16:16>> (without init value) have a constant value of 0 in block <instruction_memory>.
+    WARNING:Xst:2404 -  FFs/Latches <memory<1><14><15:15>> (without init value) have a constant value of 0 in block <instruction_memory>.
+    WARNING:Xst:2404 -  FFs/Latches <memory<1><13><14:14>> (without init value) have a constant value of 0 in block <instruction_memory>.
+    WARNING:Xst:2404 -  FFs/Latches <memory<1><12><13:13>> (without init value) have a constant value of 0 in block <instruction_memory>.
+    WARNING:Xst:2404 -  FFs/Latches <memory<1><11><12:12>> (without init value) have a constant value of 0 in block <instruction_memory>.
+    WARNING:Xst:2404 -  FFs/Latches <memory<1><10><11:11>> (without init value) have a constant value of 0 in block <instruction_memory>.
+    WARNING:Xst:2404 -  FFs/Latches <memory<1><9><10:10>> (without init value) have a constant value of 0 in block <instruction_memory>.
+    WARNING:Xst:2404 -  FFs/Latches <memory<1><8><9:9>> (without init value) have a constant value of 0 in block <instruction_memory>.
+    WARNING:Xst:2404 -  FFs/Latches <memory<1><7><8:8>> (without init value) have a constant value of 0 in block <instruction_memory>.
+    WARNING:Xst:2404 -  FFs/Latches <memory<1><6><17:17>> (without init value) have a constant value of 1 in block <instruction_memory>.
+    WARNING:Xst:2404 -  FFs/Latches <memory<1><5><7:7>> (without init value) have a constant value of 0 in block <instruction_memory>.
+    WARNING:Xst:2404 -  FFs/Latches <memory<1><4><5:5>> (without init value) have a constant value of 0 in block <instruction_memory>.
+    WARNING:Xst:2404 -  FFs/Latches <memory<1><3><4:4>> (without init value) have a constant value of 0 in block <instruction_memory>.
+    WARNING:Xst:2404 -  FFs/Latches <memory<1><2><3:3>> (without init value) have a constant value of 0 in block <instruction_memory>.
+    WARNING:Xst:2404 -  FFs/Latches <memory<1><1><6:6>> (without init value) have a constant value of 1 in block <instruction_memory>.
+    WARNING:Xst:2404 -  FFs/Latches <memory<1><0><1:1>> (without init value) have a constant value of 1 in block <instruction_memory>.
+    WARNING:Xst:2404 -  FFs/Latches <memory<0><31><2:2>> (without init value) have a constant value of 0 in block <instruction_memory>.
+    WARNING:Xst:2404 -  FFs/Latches <memory<0><30><31:31>> (without init value) have a constant value of 0 in block <instruction_memory>.
+    WARNING:Xst:2404 -  FFs/Latches <memory<0><29><0:0>> (without init value) have a constant value of 1 in block <instruction_memory>.
+    WARNING:Xst:2404 -  FFs/Latches <memory<0><28><29:29>> (without init value) have a constant value of 1 in block <instruction_memory>.
+    WARNING:Xst:2404 -  FFs/Latches <memory<0><27><28:28>> (without init value) have a constant value of 1 in block <instruction_memory>.
+    WARNING:Xst:2404 -  FFs/Latches <memory<0><26><27:27>> (without init value) have a constant value of 1 in block <instruction_memory>.
+    WARNING:Xst:2404 -  FFs/Latches <memory<0><25><30:30>> (without init value) have a constant value of 0 in block <instruction_memory>.
+    WARNING:Xst:2404 -  FFs/Latches <memory<0><24><25:25>> (without init value) have a constant value of 0 in block <instruction_memory>.
+    WARNING:Xst:2404 -  FFs/Latches <memory<0><23><24:24>> (without init value) have a constant value of 0 in block <instruction_memory>.
+    WARNING:Xst:2404 -  FFs/Latches <memory<0><22><23:23>> (without init value) have a constant value of 0 in block <instruction_memory>.
+    WARNING:Xst:2404 -  FFs/Latches <memory<0><21><22:22>> (without init value) have a constant value of 0 in block <instruction_memory>.
+    WARNING:Xst:2404 -  FFs/Latches <memory<0><20><21:21>> (without init value) have a constant value of 0 in block <instruction_memory>.
+    WARNING:Xst:2404 -  FFs/Latches <memory<0><19><20:20>> (without init value) have a constant value of 0 in block <instruction_memory>.
+    WARNING:Xst:2404 -  FFs/Latches <memory<0><18><19:19>> (without init value) have a constant value of 0 in block <instruction_memory>.
+    WARNING:Xst:2404 -  FFs/Latches <memory<0><17><18:18>> (without init value) have a constant value of 0 in block <instruction_memory>.
+    WARNING:Xst:2404 -  FFs/Latches <memory<0><16><26:26>> (without init value) have a constant value of 1 in block <instruction_memory>.
+    WARNING:Xst:2404 -  FFs/Latches <memory<0><15><17:17>> (without init value) have a constant value of 0 in block <instruction_memory>.
+    WARNING:Xst:2404 -  FFs/Latches <memory<0><14><15:15>> (without init value) have a constant value of 0 in block <instruction_memory>.
+    WARNING:Xst:2404 -  FFs/Latches <memory<0><13><14:14>> (without init value) have a constant value of 0 in block <instruction_memory>.
+    WARNING:Xst:2404 -  FFs/Latches <memory<0><12><13:13>> (without init value) have a constant value of 0 in block <instruction_memory>.
+    WARNING:Xst:2404 -  FFs/Latches <memory<0><11><12:12>> (without init value) have a constant value of 0 in block <instruction_memory>.
+    WARNING:Xst:2404 -  FFs/Latches <memory<0><10><11:11>> (without init value) have a constant value of 0 in block <instruction_memory>.
+    WARNING:Xst:2404 -  FFs/Latches <memory<0><9><10:10>> (without init value) have a constant value of 0 in block <instruction_memory>.
+    WARNING:Xst:2404 -  FFs/Latches <memory<0><8><9:9>> (without init value) have a constant value of 0 in block <instruction_memory>.
+    WARNING:Xst:2404 -  FFs/Latches <memory<0><7><8:8>> (without init value) have a constant value of 0 in block <instruction_memory>.
+    WARNING:Xst:2404 -  FFs/Latches <memory<0><6><7:7>> (without init value) have a constant value of 0 in block <instruction_memory>.
+    WARNING:Xst:2404 -  FFs/Latches <memory<0><5><16:16>> (without init value) have a constant value of 1 in block <instruction_memory>.
+    WARNING:Xst:2404 -  FFs/Latches <memory<0><4><5:5>> (without init value) have a constant value of 1 in block <instruction_memory>.
+    WARNING:Xst:2404 -  FFs/Latches <memory<0><3><4:4>> (without init value) have a constant value of 1 in block <instruction_memory>.
+    WARNING:Xst:2404 -  FFs/Latches <memory<0><2><3:3>> (without init value) have a constant value of 1 in block <instruction_memory>.
+    WARNING:Xst:2404 -  FFs/Latches <memory<0><1><2:2>> (without init value) have a constant value of 1 in block <instruction_memory>.
+    WARNING:Xst:2404 -  FFs/Latches <memory<0><0><1:1>> (without init value) have a constant value of 1 in block <instruction_memory>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred  32 D-type flip-flop(s).
+Unit <instruction_memory> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 256x32-bit single-port Read Only RAM                  : 1
+# Registers                                            : 1
+ 32-bit register                                       : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <instruction_memory>.
+INFO:Xst:3226 - The RAM <Mram_instruction_address[7]_memory[255][31]_wide_mux_1_OUT> will be implemented as a BLOCK RAM, absorbing the following register(s): <instruction_out>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 256-word x 32-bit                   |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <instruction_address> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <instruction_out> |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <instruction_memory> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 256x32-bit single-port block Read Only RAM            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <instruction_memory> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block instruction_memory, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : instruction_memory.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 2
+#      GND                         : 1
+#      VCC                         : 1
+# RAMS                             : 1
+#      RAMB16BWER                  : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 40
+#      IBUF                        : 8
+#      OBUF                        : 32
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9tqg144-3 
+
+
+Slice Logic Utilization: 
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:      0
+   Number with an unused Flip Flop:       0  out of      0         
+   Number with an unused LUT:             0  out of      0         
+   Number of fully used LUT-FF pairs:     0  out of      0         
+   Number of unique control sets:         0
+
+IO Utilization: 
+ Number of IOs:                          65
+ Number of bonded IOBs:                  41  out of    102    40%  
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:                1  out of     32     3%  
+    Number using Block RAM only:          1
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 1     |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: 2.151ns
+   Maximum output required time after clock: 5.000ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              2.151ns (Levels of Logic = 1)
+  Source:            instruction_address<7> (PAD)
+  Destination:       Mram_instruction_address[7]_memory[255][31]_wide_mux_1_OUT (RAM)
+  Destination Clock: clk rising
+
+  Data Path: instruction_address<7> to Mram_instruction_address[7]_memory[255][31]_wide_mux_1_OUT
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.222   0.579  instruction_address_7_IBUF (instruction_address_7_IBUF)
+     RAMB16BWER:ADDRA12        0.350          Mram_instruction_address[7]_memory[255][31]_wide_mux_1_OUT
+    ----------------------------------------
+    Total                      2.151ns (1.572ns logic, 0.579ns route)
+                                       (73.1% logic, 26.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Offset:              5.000ns (Levels of Logic = 1)
+  Source:            Mram_instruction_address[7]_memory[255][31]_wide_mux_1_OUT (RAM)
+  Destination:       instruction_out<31> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: Mram_instruction_address[7]_memory[255][31]_wide_mux_1_OUT to instruction_out<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     RAMB16BWER:CLKA->DOA31    1   1.850   0.579  Mram_instruction_address[7]_memory[255][31]_wide_mux_1_OUT (instruction_out_31_OBUF)
+     OBUF:I->O                 2.571          instruction_out_31_OBUF (instruction_out<31>)
+    ----------------------------------------
+    Total                      5.000ns (4.421ns logic, 0.579ns route)
+                                       (88.4% logic, 11.6% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 5.88 secs
+ 
+--> 
+
+Total memory usage is 193092 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  351 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

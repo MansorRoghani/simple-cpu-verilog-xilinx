@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "K:/memary/project/final/control.xst" -ofn "K:/memary/project/final/control.syr" 
+vhdtdtfi -lang verilog -prj final -o K:/memary/project/final/control.tfi -lib work K:/memary/project/final//control.v -module control -template K:/memary/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 

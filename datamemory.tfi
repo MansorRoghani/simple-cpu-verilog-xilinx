@@ -1,0 +1,15 @@
+
+
+
+// Instantiate the module
+datamemory instance_name (
+    .mem_read(mem_read), 
+    .mem_write(mem_write), 
+    .clk(clk), 
+    .rst(rst), 
+    .address(address), 
+    .write_data(write_data), 
+    .read_data(read_data)
+    );
+
+

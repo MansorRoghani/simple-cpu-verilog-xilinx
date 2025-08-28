@@ -1,0 +1,11 @@
+
+
+
+// Instantiate the module
+adder instance_name (
+    .add_input1(add_input1), 
+    .add_input2(add_input2), 
+    .add_outputa(add_outputa)
+    );
+
+

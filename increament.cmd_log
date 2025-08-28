@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "K:/memary/project/final/increament.xst" -ofn "K:/memary/project/final/increament.syr" 
+xst -intstyle ise -ifn "K:/memary/project/final/increament.xst" -ofn "K:/memary/project/final/increament.syr" 
+xst -intstyle ise -ifn "K:/memary/project/final/increament.xst" -ofn "K:/memary/project/final/increament.syr" 
+xst -intstyle ise -ifn "K:/memary/project/final/increament.xst" -ofn "K:/memary/project/final/increament.syr" 
+xst -intstyle ise -ifn "K:/memary/project/final/increament.xst" -ofn "K:/memary/project/final/increament.syr" 
+vhdtdtfi -lang verilog -prj final -o K:/memary/project/final/increament.tfi -lib work K:/memary/project/final//increament.v -module increament -template K:/memary/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 
