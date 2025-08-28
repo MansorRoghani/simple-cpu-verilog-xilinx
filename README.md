@@ -37,3 +37,4 @@ This CPU is a simple single-cycle processor capable of executing a custom instru
 ---
 
 "Some parts are not working after the final change, so please be careful when using it."
+***I prefer that you use a RAR file Because I might not have uploaded a few files. The software I used to create this model is an older version of Xilinx, which apparently works on Windows 7 and possibly on Windows 10 as well.
