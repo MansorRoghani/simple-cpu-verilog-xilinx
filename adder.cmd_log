@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "K:/memary/project/final/adder.xst" -ofn "K:/memary/project/final/adder.syr" 
+vhdtdtfi -lang verilog -prj final -o K:/memary/project/final/adder.tfi -lib work K:/memary/project/final//adder.v -module adder -template K:/memary/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 
